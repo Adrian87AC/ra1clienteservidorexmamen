@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', async () => {
           <h5 class="card-title">${p.nombre}</h5>
           <p class="card-text">${p.descripcion}</p>
           <p class="fw-bold">${p.precio.toFixed(2)} €</p>
+          <p class="mb-3"><img src="${p.img}" alt="${p.nombre}" class="img-fluid"></p>
+          <p class="mb-3">Categorias: ${p.categorias}</p>
           <a href="producto.html?id=${p.id}" class="btn btn-primary">Ver detalle</a>
         </div>
       </div>
